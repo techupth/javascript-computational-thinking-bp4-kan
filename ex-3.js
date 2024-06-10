@@ -82,3 +82,13 @@ let orders = [
 ];
 
 // Start coding here
+function findJcbCreditCard(objOrder){
+  let jcbOrder=[]
+  for (let order of objOrder){
+    if (order.creditCardType==="jcb"){
+      jcbOrder.push(order)
+    }
+  }
+  return jcbOrder
+}
+console.log(findJcbCreditCard(orders))
