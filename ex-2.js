@@ -82,3 +82,17 @@ let orders = [
 ];
 
 // Start coding here
+function findBirdieSheplandTotalPaid(objOrder){
+  let totalPaid=0
+  for (let order of objOrder){
+    
+      if (order.customerName==="Birdie Shepland"){
+        
+        totalPaid=totalPaid+(order.productPrice*order.productQuantity)
+        
+      }
+    
+  }
+  return console.log(`Total paid amount of Birdie Shepland: ${totalPaid} Baht`)
+}
+findBirdieSheplandTotalPaid(orders)

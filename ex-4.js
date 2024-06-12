@@ -82,3 +82,12 @@ let orders = [
 ];
 
 // Start coding here
+function findTotalOrderPrice(objOrder){
+  let totalPrice=0
+    for (let order of objOrder){
+      totalPrice=totalPrice+(order.productPrice*order.productQuantity)
+    }
+    return console.log(`Total-order-prices : ${totalPrice} Baht`)
+  }
+  findTotalOrderPrice(orders)
+

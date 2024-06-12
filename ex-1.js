@@ -82,3 +82,16 @@ let orders = [
 ];
 
 // Start coding here
+function findMaximumPrice(objOrder){
+  let maximumOrder={}
+  let maxPrice=-Infinity
+  for (let order of objOrder){
+        if (maxPrice<(order.productPrice*order.productQuantity)){
+        maxPrice=order.productPrice*order.productQuantity
+        maximumOrder=order
+        }
+      }
+  
+  return maximumOrder
+}
+console.log(findMaximumPrice(orders))
